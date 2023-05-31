@@ -1,0 +1,46 @@
+.contact-wrapper {}
+
+.contact-left {}
+
+.contact-right {
+    display: flex;
+    flex-direction: row;
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            border: 1px solid #4B47FF;
+            border-radius: 10px;
+            padding: 15px 25px;
+            gap: 10px;
+            width: 617px;
+            // height: 50px;
+            background: #141D2F;
+            color: white;
+            margin-bottom: 32px;
+
+            &::placeholder {
+                color: white;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+            }
+        }
+
+        button {
+            background: #00BEE8;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            width: 253px;
+            height: 58px;
+
+            span {
+                font-weight: 400;
+                font-size: 23px;
+                line-height: 120%;
+            }
+        }
+    }
+}
