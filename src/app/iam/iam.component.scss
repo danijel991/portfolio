@@ -1,0 +1,26 @@
+.iAm-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-vertical {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 120%;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 120%;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 120%;
+  color: #4B47FF;
+}
