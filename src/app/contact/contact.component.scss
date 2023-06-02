@@ -1,19 +1,33 @@
 .contact-wrapper {
   display: flex;
+  height: 600px;
 }
 
 .contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contact-first-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .horizontal-line {
-  border: 4px solid #4b47ff;
+  border: 2px solid #4b47ff;
   width: 50px;
   height: 0px;
+  margin-right: 50px;
 }
 
 .contact-right {
   display: flex;
   flex-direction: row;
+  margin-right: 100px;
+  justify-content: flex-end;
 
   form {
     display: flex;
@@ -59,4 +73,20 @@
       }
     }
   }
+}
+
+.contact-info {
+  margin-left: 100px;
+}
+
+h1 {
+  margin-bottom: 85px;
+}
+
+h2 {
+  margin: 0 0 35px 0;
+}
+
+.span-splitter {
+  margin-bottom: 25px;
 }

@@ -24,6 +24,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  width: 100vw;
 }
 
 .skills-right {
@@ -49,4 +50,26 @@ span {
   font-size: 16px;
   line-height: 120%;
   margin-bottom: 57px;
+  max-width: 471px;
+}
+
+.align-right {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: right;
+}
+
+.horizontal-line {
+  border: 2px solid #4b47ff;
+  width: 58px;
+  height: 0;
+}
+
+.right-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  // max-width: 657px;
 }

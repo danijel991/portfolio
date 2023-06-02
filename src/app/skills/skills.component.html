@@ -1,21 +1,22 @@
 <div class="skill-wrapper">
-    <div class="skills">
-        <div class="skills-left">
-            <div *ngFor="let skill of skills; let i = index" class="skill-icons">
-                <div class="icon-container">
-                    <img class="skill-icon" [src]="skill.img" alt="">
-                    <span class="title">{{skill.title}}</span>
-                </div>
-            </div>
+  <div class="skills">
+    <div class="skills-left">
+      <div *ngFor="let skill of skills; let i = index" class="skill-icons">
+        <div class="icon-container">
+          <img class="skill-icon" [src]="skill.img" alt="">
+          <span class="title">{{skill.title}}</span>
         </div>
-        <div class="skills-right">
-            <div>
-                <h1>My skills</h1>
-            </div>
-            <span>I have grown my frontend developments skills that have allowed me to create different real
-                projects.</span>
-            <div>
-                <button>Get in touch</button>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="skills-right">
+      <div class="align-right">
+        <div class="right-wrapper">
+          <h1>My skills</h1>
+          <div class="horizontal-line"></div>
+          <span>I have grown my frontend developments skills that have allowed me to create different real
+            projects.</span>
+        </div>
+      </div>
+      <button>Get in touch</button>
+    </div>
+  </div>

@@ -4,7 +4,7 @@
 }
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", Fallback, sans-serif;
   color: #ffffff;
 }
 
@@ -20,6 +20,7 @@ h1 {
   font-weight: 700;
   font-size: 90px;
   line-height: 120%;
+  text-align: center;
 }
 
 button {
@@ -32,6 +33,7 @@ button {
   font-weight: 400;
   font-size: 23px;
   line-height: 120%;
+  border: 0;
 }
 
 .me-middle {
