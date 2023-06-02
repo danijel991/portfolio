@@ -1,6 +1,18 @@
 .aboutMe-wrapper {
-  width: 471px;
   margin-bottom: 289px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 102px;
+  justify-content: space-between;
+}
+
+.aboutMe-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min-content;
 }
 
 span {
@@ -22,4 +34,45 @@ span {
   // &img {
   //   margin-right: 42px;
   // }
+}
+
+.aboutMe-right {
+  height: 509px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-small {
+  border: 4px solid #00bee8;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 325px;
+    height: 325px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.horizontal-line {
+  width: 267px;
+  height: 0px;
+  border: 2px solid #00bee8;
+}
+
+.blurred-item-2 {
+background-image: url(../../assets/img/blurry/7.png);
+width: 20%;
+height: 951.44px;
+background-repeat: no-repeat;
+position: absolute;
+right: 0;
+top: 53%;
 }

@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  public contactElementId: string | null = null;
 
   constructor(public router: Router) {
   }
