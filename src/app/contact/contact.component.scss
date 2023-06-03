@@ -1,6 +1,7 @@
 .contact-wrapper {
   display: flex;
-  height: 600px;
+  flex-direction: column;
+  margin-bottom: 220px;
 }
 
 .contact-left {
@@ -26,8 +27,8 @@
 .contact-right {
   display: flex;
   flex-direction: row;
-  margin-right: 100px;
   justify-content: flex-end;
+  margin-left: 75px;
 
   form {
     display: flex;
@@ -75,10 +76,6 @@
   }
 }
 
-.contact-info {
-  margin-left: 100px;
-}
-
 h1 {
   margin-bottom: 85px;
 }
@@ -89,4 +86,17 @@ h2 {
 
 .span-splitter {
   margin-bottom: 25px;
+}
+
+.contact-second-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.contact-info {
+  width: 473px;
+  margin-right: 75px;
 }

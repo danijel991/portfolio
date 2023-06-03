@@ -3,19 +3,21 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .name-font {
   cursor: pointer;
   font-size: 32px;
   font-weight: 800;
+  margin-left: 100px;
 }
 
 .href-container {
   gap: 29px;
   display: flex;
   flex-direction: row;
-  margin-right: 101px;
+  margin-right: 100px;
 }
 
 a {

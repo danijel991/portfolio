@@ -1,7 +1,38 @@
 .footer-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border-top: 4px solid #00BEE8;
+  border-top: 4px solid #00bee8;
 }
+
+.margin {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 307px;
+  height: 250px;
+}
+
+.href-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+
+  img {
+    height: auto;
+    width: 30px;
+  }
+}
+
+.name-font {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.copyright-span {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 120%;
+  white-space: nowrap;
+}
+

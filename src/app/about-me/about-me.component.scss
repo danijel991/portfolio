@@ -11,7 +11,7 @@
 .aboutMe-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: min-content;
 }
 
@@ -68,11 +68,15 @@ span {
 }
 
 .blurred-item-2 {
-background-image: url(../../assets/img/blurry/7.png);
-width: 20%;
-height: 951.44px;
-background-repeat: no-repeat;
-position: absolute;
-right: 0;
-top: 53%;
+  background-image: url(../../assets/img/blurry/7.png);
+  width: 20%;
+  height: 951.44px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 53%;
+}
+
+h1 {
+  margin: 32px 0 32px 0;
 }
