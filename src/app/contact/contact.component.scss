@@ -37,9 +37,9 @@
 
     input,
     textarea {
-      border: 1px solid #4b47ff;
-      border-radius: 10px;
-      padding: 15px 25px;
+      border: 1px solid #4b47ff !important;
+      border-radius: 10px !important;
+      padding: 15px 25px !important;
       gap: 10px;
       width: 617px;
       // height: 50px;
@@ -56,8 +56,35 @@
     }
 
     textarea {
-      min-height: 202px;
+      position: relative;
+      z-index: 1;
       resize: vertical;
+      min-height: 202px;
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      padding-right: 20px;
+    }
+
+    textarea::-webkit-resizer {
+      display: none;
+    }
+
+    .wrap {
+      position: relative;
+      display: inline-block;
+    }
+
+    .pull-tab {
+      height: 20px;
+      width: 20px;
+      background-image: url(../../assets/img/textarea-corner.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: 44px;
+      right: 4px;
+      pointer-events: none;
+      z-index: 2;
     }
 
     button {
