@@ -1,8 +1,8 @@
 .iAm-wrapper {
   display: flex;
   flex-direction: row;
-  margin-right: 100px;
-  margin-left: 100px;
+  // margin-right: 100px;
+  // margin-left: 100px;
 }
 
 .iAm-container {
@@ -12,7 +12,10 @@
 }
 
 .image-big {
-  height: 500px;
+  height: 466px;
+  position: relative;
+  left: -28px;
+  top: -3px;
 }
 
 .text-vertical {
