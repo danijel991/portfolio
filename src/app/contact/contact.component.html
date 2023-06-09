@@ -1,4 +1,4 @@
-<div class="contact-wrapper" id="contactMe">
+<div class="contact-wrapper" id="contactMe" data-aos="zoom-in-up">
   <div class="contact-left">
     <div class="contact-first-line">
       <div class="horizontal-line"></div>
@@ -12,9 +12,9 @@
         <span>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your
           projects with my work.</span>
       </div>
-      <span>Need a Frontend developer? <b> Contact me!</b></span>
+      <span>Need a Frontend developer? <b><a href="#contact-right"> Contact me!</a></b></span>
     </div>
-    <div class="contact-right">
+    <div class="contact-right" id="contact-right">
       <form (submit)="sendMail()" ngNativeValidate #myForm>
         <input required type="text" name="name" placeholder="Your name " #nameField>
         <input required type="mail" placeholder="Your email " #mailField>
@@ -26,6 +26,10 @@
         <button #sendButton>
           <span>Send message :&#41; </span>
         </button>
+        <div class="spinningCirle">
+          <mat-progress-spinner id="spinner" mode="indeterminate"
+            [style.display]="isLoading ? 'block' : 'none'"></mat-progress-spinner>
+        </div>
       </form>
     </div>
   </div>

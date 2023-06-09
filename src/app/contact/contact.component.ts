@@ -21,6 +21,8 @@ export class ContactComponent {
   @ViewChild('mailField')
   mailField!: ElementRef;
 
+  isLoading: boolean = false; // Add this variable
+
   async sendMail() {
     console.log('sending mail', this.myForm);
 
@@ -33,6 +35,8 @@ export class ContactComponent {
     mesageField.disabled = true;
     mailField.disabled = true;
     sendButton.disabled = true;
+
+    this.isLoading = true; // Display the animation
 
     // Animation anzeigen
     let fd = new FormData();
@@ -50,6 +54,8 @@ export class ContactComponent {
 
     // Text anzeigen: Nachricht gesendet
     // dieses true false macht den button grau bis die nachricht gesendet wurde
+
+    this.isLoading = false; // Hide the animation
     nameField.disabled = false;
     mesageField.disabled = false;
     mailField.disabled = false;

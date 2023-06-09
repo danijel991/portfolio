@@ -1,7 +1,8 @@
 .contact-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 220px;
+  padding-bottom: 220px;
+  padding-top: 240px;
 }
 
 .contact-left {
@@ -15,6 +16,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 85px;
 }
 
 .horizontal-line {
@@ -103,12 +105,13 @@
   }
 }
 
-h1 {
-  margin-bottom: 85px;
-}
-
 h2 {
   margin: 0 0 35px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  width: 473px;
 }
 
 .span-splitter {
@@ -121,9 +124,30 @@ h2 {
   justify-content: space-between;
   margin-left: 100px;
   margin-right: 100px;
+
+  span {
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 120% !important;
+  }
 }
 
 .contact-info {
   width: 473px;
   margin-right: 75px;
+}
+
+.spinningCirle {
+  position: absolute;
+  padding-top: 526px;
+}
+
+#spinner {
+  --mdc-circular-progress-active-indicator-color: #00bee8;
+  z-index: 10;
+}
+
+#contactMe {
+  scroll-margin-top: 200px;
 }

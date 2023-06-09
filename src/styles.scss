@@ -4,8 +4,9 @@
 }
 
 * {
-  font-family: "Poppins", Fallback, sans-serif;
+  font-family: "Poppins", Fallback, sans-serif !important;
   color: #ffffff;
+  box-sizing: border-box;
 }
 
 html,
@@ -21,10 +22,10 @@ body {
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 90px;
-  line-height: 120%;
-  text-align: center;
+  font-weight: 700 !important;
+  font-size: 90px !important;
+  line-height: 120% !important;
+  text-align: center !important;
 }
 
 button {
@@ -38,6 +39,7 @@ button {
   font-size: 23px;
   line-height: 120%;
   border: 0;
+  cursor: pointer;
 }
 
 .me-middle {
@@ -50,3 +52,10 @@ button {
 body > app-root > app-main > div > app-about-me {
   z-index: 5;
 }
+
+.scroll-section {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUp 1s forwards;
+}
+

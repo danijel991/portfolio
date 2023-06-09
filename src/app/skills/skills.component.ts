@@ -21,7 +21,7 @@ export class SkillsComponent {
       title: 'JavaScript',
     },
     {
-      img: './assets/img/skill-icons/html.png', 
+      img: './assets/img/skill-icons/html.png',
       title: 'HTML',
     },
     {

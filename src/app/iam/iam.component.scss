@@ -30,14 +30,15 @@
 
 h1 {
   margin-bottom: 0;
+  text-align: left !important;
 }
 
 h2 {
-  margin-top: 0;
-  font-weight: 400;
-  font-size: 58px;
-  line-height: 120%;
-  color: #4b47ff;
+  margin-top: 0 !important;
+  font-weight: 400 !important;
+  font-size: 58px !important;
+  line-height: 120% !important;
+  color: #4b47ff !important;
 }
 
 .contact-container {
@@ -119,4 +120,12 @@ a {
   width: 100%;
   height: 532px;
   z-index: 3;
+}
+
+.spin-image {
+  transition: transform 0.5s ease-in-out;
+}
+
+.spin-image:hover {
+  transform: rotate(360deg);
 }
