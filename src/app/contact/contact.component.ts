@@ -23,8 +23,14 @@ export class ContactComponent {
 
   isLoading: boolean = false; // Add this variable
 
+  model = {
+    name:'',
+    email:'',
+    message:''
+  }
+
   async sendMail() {
-    console.log('sending mail', this.myForm);
+    console.log('sending email', this.myForm);
 
     let nameField = this.nameField.nativeElement;
     let mesageField = this.mesageField.nativeElement;

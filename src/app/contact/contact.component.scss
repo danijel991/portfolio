@@ -39,9 +39,9 @@
 
     input,
     textarea {
-      border: 1px solid #4b47ff !important;
-      border-radius: 10px !important;
-      padding: 15px 25px !important;
+      border: 1px solid #4b47ff;
+      border-radius: 10px;
+      padding: 15px 25px;
       gap: 10px;
       width: 617px;
       // height: 50px;
@@ -150,4 +150,30 @@ h2 {
 
 #contactMe {
   scroll-margin-top: 200px;
+}
+
+.ng-valid[required],
+.ng-valid.required {
+  border: 1px solid #42a948 !important; /* green */
+}
+
+.ng-invalid:not(form).ng-touched {
+  border: 1px solid #a94442 !important; /* red */
+}
+
+.custom-form-field .mat-input-element {
+  background-color: #141d2f !important;
+}
+
+.success-icon {
+  color: green;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  visibility: hidden;
+}
+
+.custom-form-field .ng-valid .success-icon {
+  visibility: visible;
 }

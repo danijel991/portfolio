@@ -15,13 +15,14 @@
       <span>Need a Frontend developer? <b><a href="#contact-right"> Contact me!</a></b></span>
     </div>
     <div class="contact-right" id="contact-right">
-      <form (submit)="sendMail()" ngNativeValidate #myForm>
-        <input required type="text" name="name" placeholder="Your name " #nameField>
-        <input required type="mail" placeholder="Your email " #mailField>
+      <form (submit)="sendMail()" ngNativeValidate #myForm="ngForm">
+        <input  required type="text" [(ngModel)]="model.name" name="name" id="name" minlength="3" class="input-field is-valid"
+          placeholder="Your name " pattern="[A-Za-z0-9\s]+" #nameField>
+        <input required type="email" name="email" placeholder="Your email " #mailField [(ngModel)]="model.email" class="input-field">
         <div class="wrap">
           <div class="pull-tab"></div>
-          <textarea required name="message" id="" cols="30" rows="10" placeholder="Your message"
-            #mesageField></textarea>
+          <textarea required name="message" id="message" minlength="3" cols="30" rows="10" placeholder="Your message"
+            #mesageField pattern="[A-Za-z0-9\s]+" [(ngModel)]="model.message"></textarea>
         </div>
         <button #sendButton>
           <span>Send message :&#41; </span>
