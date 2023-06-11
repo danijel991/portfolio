@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
 
+  /**
+   * Array of skills with their images and titles.
+   */
   skills = [
     {
       img: './assets/img/skill-icons/angular.png',

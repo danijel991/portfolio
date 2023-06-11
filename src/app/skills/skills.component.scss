@@ -2,14 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 85px;
+  margin-bottom: 70px;
   padding-top: 200px;
 }
 
 .skills-left {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 54px;
+  gap: 0 123px;
 }
 
 .icon-container {

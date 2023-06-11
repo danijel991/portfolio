@@ -6,29 +6,25 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
-  @ViewChild('myForm')
-  myForm!: ElementRef;
-
-  @ViewChild('nameField')
-  nameField!: ElementRef;
-
-  @ViewChild('mesageField')
-  mesageField!: ElementRef;
-
-  @ViewChild('sendButton')
-  sendButton!: ElementRef;
-
-  @ViewChild('mailField')
-  mailField!: ElementRef;
+  @ViewChild('myForm') myForm!: ElementRef;
+  @ViewChild('nameField') nameField!: ElementRef;
+  @ViewChild('mesageField') mesageField!: ElementRef;
+  @ViewChild('sendButton') sendButton!: ElementRef;
+  @ViewChild('mailField') mailField!: ElementRef;
 
   isLoading: boolean = false; // Add this variable
+  textInput: string = '';
 
   model = {
-    name:'',
-    email:'',
-    message:''
+    name: '',
+    email: '',
+    message: ''
   }
 
+  /**
+   * Sends an email using the form data.
+   * Disables the form fields and displays a loading animation during the process.
+   */
   async sendMail() {
     console.log('sending email', this.myForm);
 
@@ -42,14 +38,16 @@ export class ContactComponent {
     mailField.disabled = true;
     sendButton.disabled = true;
 
-    this.isLoading = true; // Display the animation
+    this.isLoading = true; // Display the loading animation
 
-    // Animation anzeigen
     let fd = new FormData();
     fd.append('name', nameField.value);
     fd.append('message', mailField.value + '\n' + mesageField.value);
 
-    // deactivateFields
+    /**
+     * Sends the form data to the server for processing.
+     * Enables the form fields and stops the loading animation once the request is completed.
+     */
     await fetch(
       'https://danijel-savkovic.developerakademie.net/send_mail/send_mail.php',
       {
@@ -58,22 +56,22 @@ export class ContactComponent {
       }
     );
 
-    // Text anzeigen: Nachricht gesendet
-    // dieses true false macht den button grau bis die nachricht gesendet wurde
-
-    this.isLoading = false; // Hide the animation
+    this.isLoading = false;
     nameField.disabled = false;
     mesageField.disabled = false;
     mailField.disabled = false;
     sendButton.disabled = false;
   }
 
+  /**
+   * Scrolls the page to the name input field.
+   */
   scrollToName() {
     const nameField = this.nameField.nativeElement;
-    nameField.focus(); // Fokussiere das Namenseingabefeld
+    nameField.focus(); // Set focus to the name input field
 
-    const headerHeight = 125; // Höhe des Headers in Pixeln
-    const topOffset = headerHeight + 20; // Offset-Wert anpassen, um Platz für den Header zu lassen
+    const headerHeight = 125; // Height of the header in pixels
+    const topOffset = headerHeight + 20; // Adjust the offset value to leave space for the header
 
     const rect = nameField.getBoundingClientRect();
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;

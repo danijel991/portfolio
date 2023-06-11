@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,5 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
+  constructor(private scrollService: ScrollService) {}
 
+  scrollToTop(): void {
+    this.scrollService.scrollToTop();
+  }
 }

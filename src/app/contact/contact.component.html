@@ -22,7 +22,7 @@
         <div class="wrap">
           <div class="pull-tab"></div>
           <textarea required name="message" id="message" minlength="3" cols="30" rows="10" placeholder="Your message"
-            #mesageField pattern="[A-Za-z0-9\s]+" [(ngModel)]="model.message"></textarea>
+            #mesageField pattern="[A-Za-z0-9\s]+" [(ngModel)]="model.message" (keyup.enter)="sendButton.click()"></textarea>
         </div>
         <button #sendButton>
           <span>Send message :&#41; </span>
