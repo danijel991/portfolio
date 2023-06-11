@@ -67,4 +67,21 @@ export class ContactComponent {
     mailField.disabled = false;
     sendButton.disabled = false;
   }
+
+  scrollToName() {
+    const nameField = this.nameField.nativeElement;
+    nameField.focus(); // Fokussiere das Namenseingabefeld
+
+    const headerHeight = 125; // Höhe des Headers in Pixeln
+    const topOffset = headerHeight + 20; // Offset-Wert anpassen, um Platz für den Header zu lassen
+
+    const rect = nameField.getBoundingClientRect();
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const targetTop = rect.top + scrollTop - topOffset;
+
+    window.scrollTo({
+      top: targetTop,
+      behavior: 'smooth',
+    });
+  }
 }
