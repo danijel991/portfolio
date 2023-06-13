@@ -85,3 +85,25 @@ h1 {
 body > app-root > app-main > div > app-about-me {
   z-index: 10;
 }
+
+@media only screen and (max-width: 1480px) {
+
+}
+
+@media only screen and (max-width: 1340px) {
+
+}
+
+@media only screen and (max-width: 1080px) {
+.aboutMe-right {
+  display: none;
+}
+
+h1 {
+  font-size: 45px !important;
+}
+
+.text-area {
+  margin-top: 25px;
+}
+}

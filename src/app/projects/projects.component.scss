@@ -51,7 +51,7 @@ h1 {
 }
 
 .long-line-wrapper {
-  width: calc(50% - 100vw);
+  width: calc(33.3333% - 100vw);
 }
 
 .long-line {
@@ -139,4 +139,8 @@ h2 {
 
 .img-padding {
   padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 1480px) {
+
 }

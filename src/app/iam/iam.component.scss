@@ -1,8 +1,9 @@
 .iAm-wrapper {
   display: flex;
   flex-direction: row;
-  // margin-right: 100px;
-  // margin-left: 100px;
+  justify-content: space-between;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .iAm-container {
@@ -12,10 +13,12 @@
 }
 
 .image-big {
-  height: 466px;
+  height: 500px;
   position: relative;
-  left: -28px;
-  top: 23px;
+  left: -100px;
+  top: 0px;
+  width: 560px;
+  object-fit: cover;
 }
 
 .text-vertical {
@@ -46,7 +49,7 @@ h2 {
   flex-direction: row;
   align-items: center;
   gap: 42px;
-  margin-top: 95px;
+  margin-top: 55px;
 }
 
 .vertical-line-long {
@@ -73,7 +76,7 @@ a {
 .scrollDown img {
   height: 16px;
   width: 16px;
-  animation: arrowMovement .75s infinite alternate;
+  animation: arrowMovement 0.75s infinite alternate;
 }
 
 @keyframes arrowMovement {
@@ -129,19 +132,127 @@ a {
   transform: rotate(360deg);
 }
 
-@media only screen and (max-width: 1480px) {
- h1 {
-  font-size: 68px !important;
- }
- h2 {
-  font-size: 44px !important;
- }
- .text-vertical {
-  font-size: 60px !important;
-  margin-right: 6px;
- }
-}
-
 #cotact-button {
   margin-top: 30px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .blurred-item-1 {
+    width: 515px;
+    height: 500px;
+    left: 32px;
+    top: 234px;
+    object-fit: contain;
+  }
+
+  .image-big {
+    width: 500px;
+    height: 440px;
+    left: -75px;
+    top: 60px;
+  }
+  h1 {
+    font-size: 68px !important;
+  }
+  h2 {
+    font-size: 44px !important;
+  }
+  .text-vertical {
+    font-size: 60px !important;
+    margin-right: 6px;
+  }
+}
+
+@media only screen and (max-width: 1480px) {
+}
+
+@media only screen and (max-width: 1340px) {
+  h1 {
+    font-size: 57px !important;
+  }
+
+  h2 {
+    font-size: 37px !important;
+  }
+
+  .text-vertical {
+    font-size: 48px !important;
+    margin-right: 4px;
+    padding-top: 6px;
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  h1 {
+    font-size: 50px !important;
+  }
+
+  h2 {
+    font-size: 32px !important;
+  }
+
+  .text-vertical {
+    font-size: 44px !important;
+    margin-right: 4px;
+    padding-top: 6px;
+  }
+
+  .image-big {
+    width: 450px;
+    height: 430px;
+    left: -60px;
+    top: 60px;
+  }
+}
+@media only screen and (max-width: 1230px) {
+  .image-big {
+    width: 360px;
+    height: 430px;
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  h1 {
+    font-size: 45px !important;
+  }
+
+  h2 {
+    font-size: 29px !important;
+  }
+
+  .text-vertical {
+    font-size: 38px !important;
+    margin-right: 2px;
+    padding-top: 8px;
+  }
+
+  .iAm-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 100px;
+    align-items: center;
+    gap: 50px 0;
+  }
+
+  .scrollDown,
+  .mail-link {
+    display: none;
+  }
+
+  button {
+    width: 133px !important;
+    height: 49px !important;
+    font-size: 16px !important;
+  }
+
+  #cotact-button {
+    margin-top: 11px;
+  }
+  .blurred-item-1 {
+    width: 100%;
+    left: 0;
+  }
 }

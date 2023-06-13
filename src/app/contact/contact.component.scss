@@ -48,6 +48,9 @@
       background: #141d2f;
       color: white;
       margin-bottom: 35px;
+      font-weight: 400 !important;
+      font-size: 16px !important;
+      line-height: 120% !important;
 
       &::placeholder {
         color: white;
@@ -177,3 +180,77 @@ h2 {
 .custom-form-field .ng-valid .success-icon {
   visibility: visible;
 }
+
+#contact-right > form > button > span {
+  font-weight: 400 !important;
+  font-size: 23px !important;
+  line-height: 120% !important;
+}
+
+@media only screen and (max-width: 1480px) {
+  input,
+  textarea {
+    width: 500px !important;
+  }
+
+  .contact-info {
+    width: 420px !important;
+    margin-right: 60px;
+  }
+
+  .contact-right {
+    margin-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  input,
+  textarea {
+    width: 400px !important;
+  }
+
+  .contact-info {
+    width: 336px !important;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+
+  .contact-second-line {
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    align-items: center;
+  }
+
+  input,
+  textarea {
+  }
+
+  .contact-info {
+    margin: auto;
+  }
+
+  .contact-right {
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .contact-wrapper {
+    align-items: center;
+  }
+
+  #contact-right > form > button > span {
+    font-size: 16px !important;
+  }
+
+
+h1 {
+  font-size: 45px !important;
+}
+
+h2 {
+  font-size: 23px !important;
+}
+}
+
