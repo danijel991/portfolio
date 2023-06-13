@@ -40,7 +40,7 @@
   align-items: flex-start;
   margin-left: 110px;
   margin-right: 0;
-  width: 100vw;
+  width: 100v;
   justify-content: space-between;
 }
 
@@ -126,6 +126,10 @@ h1 {
 }
 
 @media only screen and (max-width: 1080px) {
+
+  h1 {
+    font-size: 45px !important;
+  }
   .title {
     font-size: 14px !important;
     width: 64px;
@@ -144,4 +148,9 @@ h1 {
   .skills-right {
     margin-bottom: 70px;
   }
+
+  .text-margin {
+    text-align: center;
+  }
+
 }
