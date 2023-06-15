@@ -1,13 +1,15 @@
+.projects-head-wrapper {
+margin-top: 10px;
+}
+
 .projects-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
 }
 
 .subhead-span {
   text-align: center;
-  padding-left: 100px;
 }
 
 .btn-small {
@@ -29,10 +31,10 @@
 }
 
 .title-area {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .line-wrapper {
@@ -59,15 +61,11 @@ h1 {
   line-height: 120%;
 }
 
-.long-line-wrapper {
-  width: calc(33.3333% - 100vw);
-}
-
 .long-line {
   border: 2px solid #4b47ff;
   flex: 1;
   height: 0px;
-  width: 100vw;
+  width: 33vw;
 }
 
 .test-btn {
@@ -215,10 +213,22 @@ h2 {
 
   h1 {
     font-size: 45px !important;
-    margin: 35px 9px;
+    margin: 25px 0;
   }
 
-  .subhead-span {
-    padding-left: 50px;
-}
+  .title-area {
+    width: 100vw;
+  }
+
+  .long-line {
+    width: 25vw;
+  }
+
+  .header-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 38px;
+    width: 260px;
+  }
 }

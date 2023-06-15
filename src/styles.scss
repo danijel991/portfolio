@@ -63,6 +63,10 @@ a {
   text-decoration: none;
 }
 
+.d-none {
+  display: none;
+}
+
 @media only screen and (max-width: 1080px) {
   .main-wrapper {
     display: flex;

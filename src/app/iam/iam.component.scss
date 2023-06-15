@@ -227,6 +227,39 @@ a {
     padding-top: 8px;
   }
 
+  .image-big {
+    width: 270px;
+    height: 379px;
+    left: 0px;
+    top: 120px;
+  }
+
+  .me-middle {
+    padding-top: 250px;
+  }
+
+  .contact-container {
+    margin-left: -25px;
+  }
+
+  .background-stipe-1 {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .background-stipe-1 {
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    height: 300px;
+    z-index: 3;
+  }
+
+  .me-middle {
+    padding-top: 65px;
+  }
+
   .iAm-wrapper {
     display: flex;
     flex-direction: column;

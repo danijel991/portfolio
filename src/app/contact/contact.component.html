@@ -15,7 +15,7 @@
       <span>Need a Frontend developer? <b><a href="javascript:void(0);" (click)="scrollToName()">Contact me!</a></b></span>
     </div>
     <div class="contact-right" id="contact-right"  data-aos="zoom-in-up">
-      <form (submit)="sendMail()" ngNativeValidate #myForm="ngForm">
+      <form (ngSubmit)="sendMail()" ngNativeValidate #myForm="ngForm">
         <input  required type="text" [(ngModel)]="model.name" name="name" id="name" minlength="3" class="input-field is-valid"
           placeholder="Your name " pattern="[A-Za-z0-9\s]+" #nameField>
         <input required type="email" name="email" placeholder="Your email " #mailField [(ngModel)]="model.email" class="input-field">

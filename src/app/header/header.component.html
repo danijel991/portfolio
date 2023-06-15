@@ -1,6 +1,6 @@
 <div class="header-wrapper">
   <div>
-    <a class="name-href" routerLink="" (click)="scrollToTop()">
+    <a class="name-href" routerLink="" (click)="scrollToTop()" *ngIf="!isOpen">
       <div class="name-font">
         <span>D</span>
         <span style="color: #00bee8">a</span>
@@ -10,16 +10,42 @@
         <span>e</span>
         <span style="color: #4b47ff">l</span>
       </div>
-  </a>
-</div>
-  <div class="href-container">
+    </a>
+  </div>
+  <div class="href-container" id="display-big">
     <a href="#aboutMe">
       <span>About me</span>
     </a>
     <a href="#skills">
       <span>Skills</span>
-    </a><a href="#projects">
+    </a>
+    <a href="#projects">
       <span>Portfolio</span>
     </a>
+  </div>
+  <div id="display-small" (click)="toggleMenu()">
+    <div class="menu-stripes"></div>
+    <div class="menu-stripes"></div>
+    <div class="menu-stripes"></div>
+  </div>
+</div>
+
+
+<div id="href-section-menu" [ngStyle]="{ display: isOpen ? 'block' : 'none' }">
+  <div data-aos="flip-right" class="fullscreen-menu" *ngIf="isOpen" [ngClass]="{ 'menu-visible': isOpen }">
+    <div class="menu-elements">
+      <a href="#aboutMe" (click)="toggleMenu()">
+        <span>About me</span>
+      </a>
+      <a href="#skills" (click)="toggleMenu()">
+        <span>Skills</span>
+      </a>
+      <a href="#projects" (click)="toggleMenu()">
+        <span>Portfolio</span>
+      </a>
+      <a href="#contactMe" (click)="toggleMenu()">
+        <span>Contact</span>
+      </a>
+    </div>
   </div>
 </div>

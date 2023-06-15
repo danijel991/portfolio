@@ -7,9 +7,16 @@ import { ScrollService } from '../scroll.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  isOpen = false;
   constructor(private scrollService: ScrollService) {}
 
   scrollToTop(): void {
     this.scrollService.scrollToTop();
   }
+
+  toggleMenu() {
+    this.isOpen = !this.isOpen;
+    console.log('Menu toggled. isOpen:', this.isOpen);
+  }
+
 }
