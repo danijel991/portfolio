@@ -19,6 +19,21 @@ body {
 
 body {
   overflow-x: hidden !important;
+
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #00BEE8;
+  border-radius: 100px;
 }
 
 h1 {
