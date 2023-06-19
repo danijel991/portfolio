@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: min-content;
+  width: 471px;
 }
 
 span {
@@ -31,6 +31,7 @@ span {
 
   img:first-child {
     margin-right: 42px;
+    margin-left: 42px;
   }
   // &img {
   //   margin-right: 42px;
@@ -120,7 +121,6 @@ body > app-root > app-main > div > app-about-me {
 
   #aboutMe {
     margin-left: 0;
-    width: 800px;
   }
 }
 
@@ -135,9 +135,24 @@ h1 {
 
 .text-area {
   margin-top: 25px;
+  width: auto;
+
+  img:first-child {
+    margin-left: 0;
 }
 
 #aboutMe {
   flex-direction: column;
+  width: 98vw;
+  padding: 0 25px;
 }
+
+#aboutMe-left {
+  width: 100vw;
+}
+
+.about-me-second-row {
+  padding-left: 0;
+}
+  }
 }

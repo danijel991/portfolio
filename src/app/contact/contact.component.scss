@@ -257,6 +257,8 @@ h2 {
 
   .horizontal-line {
     margin-right: 5px;
+    margin-left: -25.5vw;
+    width: 24.75vw;
   }
 
   input,
@@ -272,5 +274,23 @@ h2 {
 
   .horizontal-line {
     margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  input,
+  textarea,
+  .contact-second-line,
+  .contact-info,
+  #contact-right,
+  .wrap,
+  .contact-left {
+    width: 100% !important;
+  }
+
+  .contact-wrapper {
+    width: 100vw;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }

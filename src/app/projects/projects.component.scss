@@ -1,5 +1,5 @@
 .projects-head-wrapper {
-margin-top: 10px;
+  margin-top: 10px;
 }
 
 .projects-wrapper {
@@ -31,10 +31,10 @@ margin-top: 10px;
 }
 
 .title-area {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .line-wrapper {
@@ -152,6 +152,20 @@ h2 {
   text-align: right !important;
 }
 
+.blurred-item-4 {
+  background-image: url(../../assets/img/blurry/2.png);
+  position: absolute;
+  transform: rotate(349deg);
+  object-fit: cover;
+  left: -30%;
+  padding-bottom: 50%;
+  height: 0;
+  width: 100%;
+  background-size: contain;
+  top: 30%;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 1600px) {
 }
 
@@ -174,10 +188,34 @@ h2 {
 
 @media only screen and (max-width: 1260px) {
 }
+@media only screen and (max-width: 1080px) {
+  .blurred-item-4 {
+    left: -33%;
+    top: 50%;
+  }
+
+  .img-right,
+  .img-left {
+    margin: 0;
+    height: 272px;
+    width: 400px;
+    object-fit: cover;
+  }
+
+  .projects-right-wrapper {
+    width: 380px;
+  }
+}
 
 @media only screen and (max-width: 900px) {
   .project-wrapper {
     flex-direction: column;
+  }
+
+  .blurred-item-4 {
+    left: -74%;
+    top: 0%;
+    padding-bottom: 87%;
   }
 
   .projects-right-wrapper {
@@ -202,11 +240,6 @@ h2 {
     display: flex;
   }
 
-  .img-right,
-  .img-left {
-    margin: 0;
-  }
-
   .short-line {
     width: 20px;
   }
@@ -217,11 +250,7 @@ h2 {
   }
 
   .title-area {
-    width: 100vw;
-  }
-
-  .long-line {
-    width: 25vw;
+    align-items: center;
   }
 
   .header-center {
@@ -230,5 +259,16 @@ h2 {
     flex-direction: column;
     margin-top: 38px;
     width: 260px;
+  }
+
+  .long-line {
+    width: 33vw;
+    margin-right: -33vw;
+  }
+
+  @media only screen and (max-width: 680px) {
+    .blurred-item-4 {
+      left: -53%;
+    }
   }
 }

@@ -108,6 +108,18 @@ h1 {
   margin: 32px 0 32px 0;
 }
 
+.blurred-item-3 {
+  background-image: url(../../assets/img/blurry/3.png);
+  width: 100%;
+  height: 713.44px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -482px;
+  top: 69%;
+  transform: rotate(40deg);
+  object-fit: cover;
+}
+
 @media only screen and (max-width: 1600px) {
   .skills-left {
   }
@@ -173,9 +185,23 @@ h1 {
 
   .skills-right {
     margin-bottom: 70px;
+    margin-left: 0;
+    width: 98vw;
   }
 
   .text-margin {
-    text-align: center;
+    text-align: right;
+    margin-right: 25px;
+  }
+
+  .text-margin {
+    width: 77%;
+  }
+
+  .skills-left {
+    width: 100vw;
+    margin-left: 25px;
+    margin-right: 25px;
+    gap: 0;
   }
 }

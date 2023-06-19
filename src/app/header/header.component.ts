@@ -4,7 +4,7 @@ import { ScrollService } from '../scroll.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
   isOpen = false;
@@ -12,11 +12,11 @@ export class HeaderComponent {
 
   scrollToTop(): void {
     this.scrollService.scrollToTop();
+    if (this.isOpen) this.toggleMenu();
   }
 
   toggleMenu() {
     this.isOpen = !this.isOpen;
     console.log('Menu toggled. isOpen:', this.isOpen);
   }
-
 }
