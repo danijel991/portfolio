@@ -210,6 +210,7 @@ h2 {
 @media only screen and (max-width: 900px) {
   .project-wrapper {
     flex-direction: column;
+    margin-bottom: 80px;
   }
 
   .blurred-item-4 {
@@ -221,6 +222,7 @@ h2 {
   .projects-right-wrapper {
     align-items: center;
     text-align: center;
+    width: 90vw;
   }
 
   #text-right {
@@ -228,7 +230,7 @@ h2 {
   }
 
   .btn-big {
-    display: none;
+    display: none !important;
   }
 
   .projects-section {
@@ -265,10 +267,28 @@ h2 {
     width: 33vw;
     margin-right: -33vw;
   }
+}
 
-  @media only screen and (max-width: 680px) {
-    .blurred-item-4 {
-      left: -53%;
+@media only screen and (max-width: 680px) {
+  .img-left,
+  .img-right {
+    height: auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 560px) {
+
+}
+@media only screen and (max-width: 480px) {
+  .btn-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    button {
+      margin: 0;
     }
   }
 }

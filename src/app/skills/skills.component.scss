@@ -10,6 +10,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0 123px;
+  justify-items: center;
 }
 
 .icon-container {
@@ -162,6 +163,10 @@ h1 {
   .text-margin {
     margin-right: 70px;
   }
+
+  .skills-left {
+    margin-left: 100px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -177,10 +182,16 @@ h1 {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    margin-left: 0;
-    margin-right: 0;
+    width: 100vw;
+    padding-left: 25px;
+    padding-right: 25px;
     width: unset;
     justify-content: normal;
+    margin-left: 0;
+  }
+
+  .skill-wrapper {
+    padding-top: 154px;
   }
 
   .skills-right {
@@ -199,9 +210,24 @@ h1 {
   }
 
   .skills-left {
-    width: 100vw;
-    margin-left: 25px;
-    margin-right: 25px;
-    gap: 0;
+    width: 100%;
+    gap: unset;
+    margin: 0;
   }
+
+  .icon-container {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .skill-icons {
+    width: 60px;
+  }
+  .icon-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
 }

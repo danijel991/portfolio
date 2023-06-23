@@ -19,7 +19,6 @@ body {
 
 body {
   overflow-x: hidden !important;
-
 }
 
 html::-webkit-scrollbar {
@@ -32,7 +31,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #00BEE8;
+  background-color: #00bee8;
   border-radius: 100px;
 }
 
@@ -93,5 +92,11 @@ a {
 
   .btn-small {
     display: flex;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  h1 {
+    font-size: 37px !important;
   }
 }

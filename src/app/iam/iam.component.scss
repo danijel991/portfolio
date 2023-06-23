@@ -273,14 +273,20 @@ a {
     top: 255px;
     object-fit: contain;
   }
+
+  .background-stipe-1 {
+      top: 309px;
+      width: 100vw;
+      height: 510px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
   .background-stipe-1 {
     position: absolute;
-    top: 500px;
-    width: 100%;
-    height: 300px;
+    top: 309px;
+    width: 100vw;
+    height: 510px;
     z-index: 3;
   }
 
@@ -336,5 +342,17 @@ a {
   .vertical-line-long,
   .placebo-div {
     width: 33vw;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  h1 {
+    font-size: 37px !important;
+  }
+  h2 {
+    font-size: 24px !important;
+  }
+  .text-vertical {
+    font-size: 31px!important;
   }
 }

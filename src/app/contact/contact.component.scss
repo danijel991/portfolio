@@ -1,7 +1,7 @@
 .contact-wrapper {
   display: flex;
   flex-direction: column;
-  padding-bottom: 220px;
+  padding-bottom: 60px;
   margin-top: 160px;
 }
 
@@ -185,6 +185,17 @@ h2 {
   font-weight: 400 !important;
   font-size: 23px !important;
   line-height: 120% !important;
+}
+
+.scroll-up-button-container {
+  width: 100vw;
+  height: 39px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 100px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1480px) {

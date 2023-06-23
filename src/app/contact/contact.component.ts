@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-contact',
@@ -6,6 +7,9 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
+  isOpen = false;
+  constructor(private scrollService: ScrollService) {}
+
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('mesageField') mesageField!: ElementRef;
@@ -81,5 +85,9 @@ export class ContactComponent {
       top: targetTop,
       behavior: 'smooth',
     });
+  }
+
+  scrollToTop(): void {
+    this.scrollService.scrollToTop();
   }
 }
