@@ -19,7 +19,7 @@
     <a href="#skills">
       <span>Skills</span>
     </a>
-    <a href="#projects">
+    <a href="#" (click)="scrollToName(100); preventDefault($event)">
       <span>Portfolio</span>
     </a>
   </div>
@@ -30,7 +30,6 @@
   </div>
 </div>
 
-
 <div id="href-section-menu" [ngStyle]="{ display: isOpen ? 'block' : 'none' }">
   <div data-aos="flip-right" class="fullscreen-menu" *ngIf="isOpen" [ngClass]="{ 'menu-visible': isOpen }">
     <div class="menu-elements">
@@ -40,7 +39,7 @@
       <a href="#skills" (click)="toggleMenu()">
         <span>Skills</span>
       </a>
-      <a href="#projects" (click)="toggleMenu()">
+      <a href="#projects" (click)="toggleScroll(); preventDefault($event)">
         <span>Portfolio</span>
       </a>
       <a href="#contactMe" (click)="toggleMenu()">

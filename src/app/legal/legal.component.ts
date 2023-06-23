@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-legal',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./legal.component.scss']
 })
 export class LegalComponent {
+ constructor(private scrollService: ScrollService, private elementRef: ElementRef, private renderer: Renderer2) {}
 
+  scrollToTop(): void {
+    this.scrollService.scrollToTop();
+  }
 }

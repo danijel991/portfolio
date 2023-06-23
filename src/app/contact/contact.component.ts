@@ -8,6 +8,7 @@ import { ScrollService } from '../scroll.service';
 })
 export class ContactComponent {
   isOpen = false;
+  isValid = false;
   constructor(private scrollService: ScrollService) {}
 
   @ViewChild('myForm') myForm!: ElementRef;
@@ -22,8 +23,8 @@ export class ContactComponent {
   model = {
     name: '',
     email: '',
-    message: ''
-  }
+    message: '',
+  };
 
   /**
    * Sends an email using the form data.
@@ -93,9 +94,13 @@ export class ContactComponent {
     const mailField = this.mailField.nativeElement;
     const sendButton = this.sendButton.nativeElement;
 
-    const isValid = nameField.value.trim() !== '' && mesageField.value.trim() !== '' && mailField.value.trim() !== '';
+    const isValid =
+      nameField.value.trim() !== '' &&
+      mesageField.value.trim() !== '' &&
+      mailField.value.trim() !== '';
 
     sendButton.disabled = !isValid;
+    console.log(isValid)
   }
 
   scrollToTop(): void {

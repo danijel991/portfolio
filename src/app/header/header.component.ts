@@ -15,8 +15,28 @@ export class HeaderComponent {
     if (this.isOpen) this.toggleMenu();
   }
 
-  toggleMenu() {
+  toggleMenu(): void {
     this.isOpen = !this.isOpen;
     console.log('Menu toggled. isOpen:', this.isOpen);
+  }
+
+  scrollToName(offset: number): void {
+    const element = document.getElementById('projects');
+    if (element) {
+      const offsetTop = element.offsetTop - offset;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  }
+
+  preventDefault(event: Event): void {
+    event.preventDefault();
+  }
+
+  toggleScroll(): void {
+    this.toggleMenu();
+    this.scrollToName(150);
   }
 }

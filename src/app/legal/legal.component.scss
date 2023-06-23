@@ -5,6 +5,11 @@ h1 {
   line-height: 120%;
 }
 
+h2 {
+  font-size: 32px;
+  font-weight: 700px;
+}
+
 .legalNotice__wrapper {
   padding: 200px 100px 50px;
 }
@@ -18,4 +23,25 @@ h4 {
   font-weight: 400;
   font-size: 16px;
   line-height: 180%;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .legalNotice__wrapper {
+    padding: 200px 25px 50px;
+  }
+
+  h1{
+    display: none;
+  }
+
+  p,
+li,
+i,
+h3,
+h4 {
+  display: inline-block;
+  width: 100%;
+  // text-align: justify;
+}
 }

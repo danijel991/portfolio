@@ -101,7 +101,7 @@
       height: 58px;
 
       &:hover {
-        background-color: #4B47FF;
+        background-color: #4b47ff;
         transition: all 125ms ease-in-out;
         transform: scale(1.1);
       }
@@ -172,15 +172,36 @@ h2 {
 .ng-valid[required],
 .ng-valid.required {
   border: 1px solid #42a948 !important; /* green */
+
+  :active {
+    background-color: #141d2f !important;
+  }
 }
 
 .ng-invalid:not(form).ng-touched {
   border: 1px solid #a94442 !important; /* red */
+
+  :active {
+    background-color: #141d2f !important;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+  background-color: #141d2f !important;
 }
 
 .custom-form-field .mat-input-element {
   background-color: #141d2f !important;
 }
+
+input:active {
+  background-color: #141d2f !important;
+}
+
 
 .success-icon {
   color: green;
@@ -223,14 +244,21 @@ h2 {
 }
 
 .blurred-image-5 {
+  background-image: url(../../assets/img/blurry/8.png);
+  width: 535.467px;
+  height: 708.789px;
+  transform: rotate(138deg);
   position: absolute;
-  right: -149px;
-  top: 287rem;
-  transform: rotate(82deg);
+  top: 4300px;
+  background-repeat: no-repeat;
+  left: -80px;
+  object-fit: cover;
+  overflow: hidden;
+}
 
-  img {
-    height: 415px;
-    width: 600px;
+@media only screen and (max-width: 1480px) {
+  .blurred-image-5 {
+    top: 4200px;
   }
 }
 
@@ -258,18 +286,6 @@ h2 {
 
   .contact-info {
     width: 336px !important;
-  }
-
-  .blurred-image-5 {
-    position: absolute;
-    right: -149px;
-    top: 278rem;
-    transform: rotate(82deg);
-
-    img {
-      height: 615px;
-      width: 600px;
-    }
   }
 }
 
@@ -358,17 +374,6 @@ h2 {
   }
 
   .blurred-image-5 {
-    top: 330rem;
-  }
-}
-
-@media only screen and (max-width: 680px) {
-  .blurred-image-5 {
-    top: 313rem;
-
-    img {
-      height: 1471px;
-      width: 600px;
-    }
+    top: 5200px;
   }
 }

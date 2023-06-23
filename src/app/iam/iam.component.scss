@@ -69,6 +69,11 @@ a {
   z-index: 6;
   display: flex;
   align-items: center;
+
+  &:hover {
+    transform: scale(1.25);
+    transition: transform 0.2s;
+  }
 }
 
 .scrollDown img {
@@ -238,10 +243,6 @@ a {
     padding-top: 250px;
   }
 
-  .background-stipe-1 {
-    left: 0;
-  }
-
   .iAm-wrapper {
     margin-right: 50px;
     margin-left: 50px;
@@ -264,9 +265,10 @@ a {
   }
 
   .background-stipe-1 {
-    top: 309px;
     width: 100vw;
     height: 510px;
+    left: 0;
+    top: 260px;
   }
 }
 
@@ -331,6 +333,17 @@ a {
   .vertical-line-long,
   .placebo-div {
     width: 33vw;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .background-stipe-1 {
+    top: 340px;
+    height: 420px;
+  }
+
+  .image-big {
+    top: 130px;
   }
 }
 

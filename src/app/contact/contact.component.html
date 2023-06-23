@@ -12,20 +12,23 @@
         <span>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your
           projects with my work.</span>
       </div>
-      <span>Need a Frontend developer? <b><a href="javascript:void(0);" (click)="scrollToName()">Contact me!</a></b></span>
+      <span>Need a Frontend developer? <b><a href="javascript:void(0);" (click)="scrollToName()">Contact
+            me!</a></b></span>
     </div>
-    <div class="contact-right" id="contact-right"  data-aos="zoom-in-up">
+    <div class="contact-right" id="contact-right" data-aos="zoom-in-up">
       <form (ngSubmit)="sendMail()" ngNativeValidate #myForm="ngForm">
-        <input  required type="text" [(ngModel)]="model.name" name="name" id="name" minlength="3" class="input-field is-valid"
-          placeholder="Your name " pattern="[A-Za-z0-9\s]+" #nameField>
-        <input required type="email" name="email" placeholder="Your email " #mailField [(ngModel)]="model.email" class="input-field">
+        <input required type="text" [(ngModel)]="model.name" name="name" id="name" minlength="3"
+          class="input-field is-valid" placeholder="Your name " pattern="[A-Za-z0-9\s]+" #nameField (input)="checkValidity()">
+        <input required type="email" name="email" placeholder="Your email " #mailField
+          email="true" class="input-field" ngModel [email]="true" (input)="checkValidity()">
         <div class="wrap">
           <div class="pull-tab"></div>
           <textarea required name="message" id="message" minlength="3" cols="30" rows="10" placeholder="Your message"
-            #mesageField pattern="[A-Za-z0-9\s]+" [(ngModel)]="model.message" (keyup.enter)="sendButton.click()"></textarea>
+            (input)="checkValidity()" #mesageField pattern="[A-Za-z0-9\s]+" [(ngModel)]="model.message"
+            (keyup.enter)="sendButton.click()"></textarea>
         </div>
-        <button #sendButton disabled>
-          <span>Send message :&#41; </span>
+        <button #sendButton [disabled]="!isValid">
+          <span>Send message :&#41;</span>
         </button>
         <div class="spinningCirle">
           <mat-progress-spinner id="spinner" mode="indeterminate"
@@ -35,10 +38,8 @@
     </div>
   </div>
 </div>
-<div class="blurred-image-5">
-  <img src="../../assets/img/blurry/8.png" alt="">
-</div>
 <div class="scroll-up-button-container" (click)="scrollToTop()">
   <img class="scroll-up-button" src="../../assets/img/buttons/scrollup.png" alt="">
 </div>
-
+<div class="blurred-image-5">
+</div>
