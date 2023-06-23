@@ -14,43 +14,8 @@ li,
 i,
 h3,
 h4 {
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 180%;
-}
-
-@media only screen and (max-width: 1600px) {
-  h1 {
-    font-size: 68px !important;
-  }
-}
-@media only screen and (max-width: 1340px) {
-  h1 {
-    font-size: 57px !important;
-  }
-}
-@media only screen and (max-width: 1230px) {
-  h1 {
-    font-size: 50px !important;
-  }
-}
-@media only screen and (max-width: 1080px) {
-  h1 {
-    font-size: 45px !important;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .legalNotice__wrapper {
-    padding: 125px 25px 25px;
-  }
-
-  h1 {
-    text-align: left !important;
-  }
-}
-@media only screen and (max-width: 440px) {
-  h1 {
-    font-size: 37px !important;
-  }
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
 }

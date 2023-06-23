@@ -56,7 +56,7 @@ button {
   cursor: pointer;
 
   &:hover {
-    background-color: #4B47FF;
+    background-color: #4b47ff;
     transition: all 125ms ease-in-out;
     transform: scale(1.1);
   }
@@ -87,7 +87,26 @@ a {
   display: none;
 }
 
+@media only screen and (max-width: 1600px) {
+  h1 {
+    font-size: 68px !important;
+  }
+}
+@media only screen and (max-width: 1340px) {
+  h1 {
+    font-size: 57px !important;
+  }
+}
+@media only screen and (max-width: 1230px) {
+  h1 {
+    font-size: 50px !important;
+  }
+}
 @media only screen and (max-width: 1080px) {
+  h1 {
+    font-size: 45px !important;
+  }
+
   .main-wrapper {
     display: flex;
     flex-direction: column;
@@ -98,6 +117,20 @@ a {
 
   .btn-small {
     display: flex;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .legalNotice__wrapper {
+    padding: 125px 25px 25px;
+  }
+
+  h1 {
+    text-align: left !important;
+  }
+}
+@media only screen and (max-width: 440px) {
+  h1 {
+    font-size: 37px !important;
   }
 }
 
