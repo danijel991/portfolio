@@ -87,6 +87,14 @@ a {
   display: none;
 }
 
+.spin-image {
+  transition: transform 0.5s ease-in-out;
+}
+
+.spin-image:hover {
+  transform: rotate(360deg);
+}
+
 @media only screen and (max-width: 1600px) {
   h1 {
     font-size: 68px !important;

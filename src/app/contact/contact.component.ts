@@ -87,6 +87,17 @@ export class ContactComponent {
     });
   }
 
+  checkValidity() {
+    const nameField = this.nameField.nativeElement;
+    const mesageField = this.mesageField.nativeElement;
+    const mailField = this.mailField.nativeElement;
+    const sendButton = this.sendButton.nativeElement;
+
+    const isValid = nameField.value.trim() !== '' && mesageField.value.trim() !== '' && mailField.value.trim() !== '';
+
+    sendButton.disabled = !isValid;
+  }
+
   scrollToTop(): void {
     this.scrollService.scrollToTop();
   }

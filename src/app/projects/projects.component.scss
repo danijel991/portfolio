@@ -152,22 +152,12 @@ h2 {
   text-align: right !important;
 }
 
-.blurred-item-4 {
-  background-image: url(../../assets/img/blurry/2.png);
-  position: absolute;
-  transform: rotate(349deg);
-  object-fit: cover;
-  left: -30%;
-  padding-bottom: 50%;
-  height: 0;
-  width: 100%;
-  background-size: contain;
-  top: 30%;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-@media only screen and (max-width: 1600px) {
+.test-btn {
+  &:hover {
+    background-color: #00bee8 !important;
+    transition: all 125ms ease-in-out;
+    transform: scale(1.1);
+  }
 }
 
 @media only screen and (max-width: 1340px) {
@@ -187,8 +177,6 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 1260px) {
-}
 @media only screen and (max-width: 1080px) {
   .blurred-item-4 {
     left: -33%;

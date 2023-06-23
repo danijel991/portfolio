@@ -31,6 +31,7 @@
   flex-direction: row;
   justify-content: flex-end;
   margin-left: 75px;
+  z-index: 999;
 
   form {
     display: flex;
@@ -98,6 +99,19 @@
       border-radius: 10px;
       width: 253px;
       height: 58px;
+
+      &:hover {
+        background-color: #4B47FF;
+        transition: all 125ms ease-in-out;
+        transform: scale(1.1);
+      }
+      &:disabled {
+        opacity: 0.4;
+        background: #00bee8;
+        cursor: not-allowed;
+        filter: grayscale(50%);
+        transform: none;
+      }
 
       span {
         font-weight: 400;
@@ -196,14 +210,14 @@ h2 {
   justify-content: flex-end;
   padding-right: 100px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 
   img {
     z-index: 10;
   }
 
   &:hover {
-    transform: translatey(-20px);
+    transform: translatey(-5px);
     cursor: pointer;
   }
 }
@@ -215,7 +229,7 @@ h2 {
   transform: rotate(82deg);
 
   img {
-    height: 615px;
+    height: 415px;
     width: 600px;
   }
 }
@@ -331,6 +345,10 @@ h2 {
   .wrap,
   .contact-left {
     width: 100% !important;
+  }
+
+  .scroll-up-button-container {
+    padding-right: 25px;
   }
 
   .contact-wrapper {
