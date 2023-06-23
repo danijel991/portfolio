@@ -196,6 +196,28 @@ h2 {
   justify-content: flex-end;
   padding-right: 100px;
   cursor: pointer;
+  transition: 0.3s;
+
+  img {
+    z-index: 10;
+  }
+
+  &:hover {
+    transform: translatey(-20px);
+    cursor: pointer;
+  }
+}
+
+.blurred-image-5 {
+  position: absolute;
+  right: -149px;
+  top: 287rem;
+  transform: rotate(82deg);
+
+  img {
+    height: 615px;
+    width: 600px;
+  }
 }
 
 @media only screen and (max-width: 1480px) {
@@ -222,6 +244,18 @@ h2 {
 
   .contact-info {
     width: 336px !important;
+  }
+
+  .blurred-image-5 {
+    position: absolute;
+    right: -149px;
+    top: 278rem;
+    transform: rotate(82deg);
+
+    img {
+      height: 615px;
+      width: 600px;
+    }
   }
 }
 
@@ -303,5 +337,20 @@ h2 {
     width: 100vw;
     padding-left: 25px;
     padding-right: 25px;
+  }
+
+  .blurred-image-5 {
+    top: 330rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .blurred-image-5 {
+    top: 313rem;
+
+    img {
+      height: 1471px;
+      width: 600px;
+    }
   }
 }

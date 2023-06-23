@@ -54,6 +54,12 @@ button {
   line-height: 120% !important;
   border: 0;
   cursor: pointer;
+
+  &:hover {
+    background-color: #4B47FF;
+    transition: all 125ms ease-in-out;
+    transform: scale(1.1);
+  }
 }
 
 .me-middle {
