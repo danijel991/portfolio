@@ -67,13 +67,14 @@ span {
 }
 
 .blurred-item-2 {
-  background-image: url(../../assets/img/blurry/7.png);
-  width: 20%;
-  height: 951.44px;
+  width: 500px;
+  height: 31rem;
   background-repeat: no-repeat;
   position: absolute;
-  right: 0;
-  top: 53%;
+  right: -10rem;
+  top: 45rem;
+  z-index: -1;
+  object-fit: cover;
 }
 
 h1 {
@@ -107,6 +108,13 @@ body > app-root > app-main > div > app-about-me {
     }
   }
 
+  .blurred-item-2 {
+    width: 420px;
+    height: 20rem;
+    right: -12rem;
+    top: 42rem;
+  }
+
   .horizontal-line {
     display: none;
   }
@@ -138,20 +146,27 @@ body > app-root > app-main > div > app-about-me {
     }
   }
 
-    #aboutMe {
-      flex-direction: column;
-      width: 98vw;
-      padding: 125px 25px 0 25px;
-      margin-bottom: 0;
-    }
-
-    #aboutMe-left {
-      width: 100vw;
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-
-    .about-me-second-row {
-      padding-left: 0;
-    }
+  #aboutMe {
+    flex-direction: column;
+    width: 98vw;
+    padding: 125px 25px 0 25px;
+    margin-bottom: 0;
   }
+
+  #aboutMe-left {
+    width: 100vw;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .about-me-second-row {
+    padding-left: 0;
+  }
+
+  .blurred-item-2 {
+    width: 420px;
+    height: 25rem;
+    right: -15rem;
+    top: 47rem;
+  }
+}

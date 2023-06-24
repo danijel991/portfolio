@@ -244,12 +244,11 @@ input:active {
 }
 
 .blurred-image-5 {
-  background-image: url(../../assets/img/blurry/8.png);
   width: 535.467px;
   height: 708.789px;
   transform: rotate(138deg);
   position: absolute;
-  top: 4300px;
+  top: 4450px;
   background-repeat: no-repeat;
   left: -80px;
   object-fit: cover;
@@ -374,6 +373,10 @@ input:active {
   }
 
   .blurred-image-5 {
-    top: 5200px;
+    top: 5625px;
+    width: 214.467px;
+    height: 296.789px;
+    transform: rotate(90deg);
+    left: 43px;
   }
 }
