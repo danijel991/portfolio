@@ -25,6 +25,17 @@ h4 {
   line-height: 180%;
 }
 
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
 
 @media only screen and (max-width: 900px) {
   .legalNotice__wrapper {
@@ -43,5 +54,9 @@ h4 {
   display: inline-block;
   width: 100%;
   // text-align: justify;
+}
+
+#imprint-small {
+  font-size: 50px !important;
 }
 }

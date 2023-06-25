@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 2;
 }
 
 .project-wrapper {
@@ -150,6 +151,24 @@ h2 {
 
 #text-right {
   text-align: right !important;
+}
+
+.img-blurry-3 {
+  height: 748.725px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 195rem;
+  width: 636px;
+}
+
+.img-blurry-5 {
+  width: 20rem;
+  height: 51rem;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0px;
+  top: 210rem;
 }
 
 .test-btn {
