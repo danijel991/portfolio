@@ -7,18 +7,16 @@
   font-family: "Poppins", Fallback, sans-serif !important;
   color: #ffffff;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
   margin: 0;
-  // padding: 0;
+  overflow-x: hidden !important;
   background-color: #141d2f;
   scroll-behavior: smooth;
-}
-
-body {
-  overflow-x: hidden !important;
 }
 
 html::-webkit-scrollbar {
@@ -132,9 +130,6 @@ a {
   }
 }
 @media only screen and (max-width: 900px) {
-html, body {
-  overflow-x: hidden !important;
-}
 
   .legalNotice__wrapper {
     padding: 125px 25px 25px;

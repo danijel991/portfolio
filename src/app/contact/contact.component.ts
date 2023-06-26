@@ -99,7 +99,6 @@ export class ContactComponent {
       mailField.value.trim() !== '';
 
     sendButton.disabled = !isValid;
-    console.log(isValid)
   }
 
   scrollToTop(): void {

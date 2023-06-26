@@ -17,7 +17,6 @@ export class HeaderComponent {
 
   toggleMenu(): void {
     this.isOpen = !this.isOpen;
-    console.log('Menu toggled. isOpen:', this.isOpen);
   }
 
   scrollToName(offset: number): void {
