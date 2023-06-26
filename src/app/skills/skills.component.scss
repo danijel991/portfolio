@@ -62,7 +62,7 @@
     color: #ffffff;
 
     &:hover {
-      background-color: #4B47FF;
+      background-color: #4b47ff;
       transition: all 125ms ease-in-out;
       transform: scale(1.1);
     }
@@ -168,9 +168,14 @@ h1 {
   .text-margin {
     margin-right: 70px;
   }
-
-  .skills-left {
+  skills-right .skills-left {
     margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .skills-right {
+    margin-left: 45px;
   }
 }
 
@@ -197,12 +202,14 @@ h1 {
 
   .skill-wrapper {
     padding-top: 154px;
+    margin-bottom: 92px;
   }
 
   .skills-right {
     margin-bottom: 70px;
     margin-left: 0;
-    width: 98vw;
+    width: 100vw;
+    align-items: flex-end;
   }
 
   .text-margin {
@@ -223,6 +230,14 @@ h1 {
   .icon-container {
     width: 40vw;
   }
+
+  .display-responsive {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    top: 66rem;
+  }
 }
 
 @media only screen and (max-width: 560px) {
@@ -231,5 +246,9 @@ h1 {
   }
   .icon-container {
     width: 100%;
+  }
+
+  .display-responsive {
+    top: 68rem;
   }
 }

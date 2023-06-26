@@ -2,6 +2,15 @@
   margin-top: 10px;
 }
 
+.flex-wrap {
+  flex: 1 1 0;
+}
+
+.flex-short {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .projects-wrapper {
   display: flex;
   flex-direction: column;
@@ -31,18 +40,12 @@
   margin-bottom: 80px;
 }
 
-.title-area {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
 .line-wrapper {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  width: 100vw;
 }
 
 .short-line {
@@ -66,7 +69,7 @@ h1 {
   border: 2px solid #4b47ff;
   flex: 1;
   height: 0px;
-  width: 33vw;
+  width: 100%;
 }
 
 .test-btn {
@@ -179,6 +182,12 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 1600px) {
+  .short-line,
+  .long-line {
+    margin-bottom: 36px;
+  }
+}
 @media only screen and (max-width: 1340px) {
   .projects-section {
     margin-left: 50px;
@@ -221,6 +230,11 @@ h2 {
     margin-bottom: 80px;
   }
 
+  .short-line,
+  .long-line {
+    margin-bottom: 0;
+  }
+
   .blurred-item-4 {
     display: none;
   }
@@ -257,28 +271,49 @@ h2 {
     margin: 25px 0;
   }
 
-  .title-area {
-    align-items: center;
-  }
-
   .header-center {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 38px;
-    width: 260px;
   }
 
-  .long-line {
-    width: 33vw;
+  .img-blurry-3 {
+    top: 205rem;
+    width: 500px;
+    height: 440px;
   }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 740px) {
   .img-left,
   .img-right {
     height: auto;
     width: 100%;
+  }
+    // .short-line,
+    // .long-line {
+    //   margin-bottom: 0;
+    // }
+  }
+
+@media only screen and (max-width: 736px) {
+  .short-line,
+  .long-line {
+    margin-bottom: 18px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .short-line,
+  .long-line {
+    margin-bottom: 18px;
+  }
+  .short-line{
+    margin-right: 9px;
+  }
+  .long-line {
+    margin-left: 9px;
   }
 }
 
@@ -293,5 +328,30 @@ h2 {
     button {
       margin: 0;
     }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .img-blurry-5 {
+    width: 12rem;
+    height: 33rem;
+    top: 280rem;
+  }
+
+  .img-blurry-3 {
+    height: 452.725px;
+    top: 212rem;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .img-blurry-5 {
+    top: 290rem;
+  }
+
+  .img-blurry-3 {
+    height: 304.725px;
+    top: 225rem;
+    width: 95vw;
   }
 }

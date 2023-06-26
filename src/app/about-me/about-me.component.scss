@@ -88,6 +88,11 @@ body > app-root > app-main > div > app-about-me {
   .aboutMe-right {
     margin-left: 20px;
   }
+
+  .blurred-item-2 {
+    width: 20rem;
+    height: 49rem;
+  }
 }
 @media only screen and (max-width: 1080px) {
   .image-small {
@@ -108,10 +113,9 @@ body > app-root > app-main > div > app-about-me {
   }
 
   .blurred-item-2 {
-    width: 420px;
-    height: 20rem;
-    right: -12rem;
-    top: 42rem;
+    width: 17rem;
+    height: 32rem;
+    top: 34rem;
   }
 
   .horizontal-line {
@@ -163,9 +167,8 @@ body > app-root > app-main > div > app-about-me {
   }
 
   .blurred-item-2 {
-    width: 420px;
-    height: 25rem;
-    right: -15rem;
+    width: 12rem;
+    height: 26rem;
     top: 47rem;
   }
 }

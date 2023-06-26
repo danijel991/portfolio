@@ -188,7 +188,7 @@ h2 {
 
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
-    transition: background-color 600000s 0s, color 600000s 0s;
+  transition: background-color 600000s 0s, color 600000s 0s;
 }
 input[data-autocompleted] {
   background-color: #141d2f !important;
@@ -201,7 +201,6 @@ input[data-autocompleted] {
 input:active {
   background-color: #141d2f !important;
 }
-
 
 .success-icon {
   color: green;
@@ -252,9 +251,9 @@ input:active {
   width: 516px;
 }
 
-@media only screen and (max-width: 1480px) {
+@media only screen and (max-width: 1600px) {
   .blurred-image-5 {
-    top: 4200px;
+    top: 279rem;
   }
 }
 
@@ -271,6 +270,12 @@ input:active {
 
   .contact-right {
     margin-left: 60px;
+  }
+
+  .blurred-image-5 {
+    top: 4458px;
+    width: 432px;
+    height: 453.725px;
   }
 }
 
@@ -291,6 +296,12 @@ input:active {
     margin-left: 25px;
     margin-right: 25px;
     align-items: center;
+  }
+
+  .blurred-image-5 {
+    top: 4412px;
+    width: 395px;
+    height: 393.725px;
   }
 
   input,
@@ -370,10 +381,30 @@ input:active {
   }
 
   .blurred-image-5 {
-    top: 5625px;
-    width: 214.467px;
-    height: 296.789px;
-    transform: rotate(90deg);
-    left: 43px;
+    width: 286px;
+    height: 303px;
+    top: 340rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .blurred-image-5 {
+    width: 334px;
+    height: 372px;
+    top: 351rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .blurred-image-5 {
+    width: 55vw;
+    height: 55vw;
+    top: 355rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .blurred-image-5 {
+    width: 88vw;
+    height: 93vw;
+    top: 368rem;
   }
 }
