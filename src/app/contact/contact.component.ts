@@ -31,7 +31,6 @@ export class ContactComponent {
    * Disables the form fields and displays a loading animation during the process.
    */
   async sendMail() {
-    console.log('sending email', this.myForm);
 
     let nameField = this.nameField.nativeElement;
     let mesageField = this.mesageField.nativeElement;

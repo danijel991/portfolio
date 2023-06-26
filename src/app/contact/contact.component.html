@@ -20,7 +20,7 @@
         <input required type="text" [(ngModel)]="model.name" name="name" id="name" minlength="3"
           class="input-field is-valid" placeholder="Your name " pattern="[A-Za-z0-9\s]+" #nameField (input)="checkValidity()">
         <input required type="email" name="email" placeholder="Your email " #mailField
-          email="true" class="input-field" ngModel [email]="true" (input)="checkValidity()">
+          email="true" class="input-field" ngModel email (input)="checkValidity()">
         <div class="wrap">
           <div class="pull-tab"></div>
           <textarea required name="message" id="message" minlength="3" cols="30" rows="10" placeholder="Your message"
