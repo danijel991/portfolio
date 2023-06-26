@@ -17,6 +17,14 @@ export class HeaderComponent {
 
   toggleMenu(): void {
     this.isOpen = !this.isOpen;
+    const html = document.querySelector('html');
+    if (html) {
+      if (this.isOpen) {
+        html.style.overflowY = 'hidden';
+      } else {
+        html.style.overflowY = 'auto';
+      }
+    }
   }
 
   scrollToName(offset: number): void {
