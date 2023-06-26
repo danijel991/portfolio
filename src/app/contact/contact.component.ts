@@ -53,7 +53,7 @@ export class ContactComponent {
      * Enables the form fields and stops the loading animation once the request is completed.
      */
     await fetch(
-      'https://danijel-savkovic.developerakademie.net/send_mail/send_mail.php',
+      'https://danijel-savkovic.com/send_mail/send_mail.php',
       {
         method: 'POST',
         body: fd,
