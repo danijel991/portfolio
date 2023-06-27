@@ -18,13 +18,14 @@
     <div class="contact-right" id="contact-right" data-aos="zoom-in-up">
       <form (ngSubmit)="sendMail()" ngNativeValidate #myForm="ngForm">
         <input required type="text" [(ngModel)]="model.name" name="name" id="name" minlength="3"
-          class="input-field is-valid" placeholder="Your name " pattern="[A-Za-z0-9\s]+" #nameField (input)="checkValidity()">
-        <input required type="email" name="email" placeholder="Your email " #mailField
-          email="true" class="input-field" ngModel email (input)="checkValidity()">
+          class="input-field is-valid" placeholder="Your name " pattern="[A-Za-z0-9\s]+" #nameField
+          (input)="checkValidity()">
+        <input required type="email" name="email" minlength="5" placeholder="Your email " #mailField email="true" class="input-field"
+          ngModel email (input)="checkValidity()">
         <div class="wrap">
           <div class="pull-tab"></div>
-          <textarea required name="message" id="message" minlength="3" cols="30" rows="10" placeholder="Your message"
-            (input)="checkValidity()" #mesageField pattern="[A-Za-z0-9\s]+" [(ngModel)]="model.message"
+          <textarea required name="message" id="message" minlength="5" maxlength="10000" cols="30" rows="10"
+            placeholder="Your message" (input)="checkValidity()" #mesageField [(ngModel)]="model.message"
             (keyup.enter)="sendButton.click()"></textarea>
         </div>
         <button #sendButton [disabled]="!isValid">
