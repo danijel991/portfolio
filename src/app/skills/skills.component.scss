@@ -6,6 +6,10 @@
   padding-top: 200px;
 }
 
+.display-mobile {
+  display: none;
+}
+
 .skills-left {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -191,7 +195,6 @@ h1 {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    width: 100vw;
     padding-left: 25px;
     padding-right: 25px;
     width: unset;
@@ -201,7 +204,7 @@ h1 {
 
   .skill-wrapper {
     padding-top: 154px;
-    margin-bottom: 92px;
+    margin-bottom: 0;
   }
 
   .skills-right {
@@ -214,9 +217,6 @@ h1 {
   .text-margin {
     text-align: right;
     margin-right: 25px;
-  }
-
-  .text-margin {
     width: 77%;
   }
 
@@ -230,12 +230,15 @@ h1 {
     width: 40vw;
   }
 
-  .display-responsive {
-    position: absolute;
-    width: 100vw;
-    display: flex;
+  .display-big {
+    display: none;
+  }
+
+  .display-mobile {
+    display: flex !important;
     justify-content: center;
-    top: 66rem;
+    margin-bottom: 26px;
+    margin-top: 6px;
   }
 }
 
@@ -245,9 +248,5 @@ h1 {
   }
   .icon-container {
     width: 100%;
-  }
-
-  .display-responsive {
-    top: 68rem;
   }
 }
