@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { ScrollService } from '../scroll.service';
 
 @Component({
@@ -11,6 +10,6 @@ export class FooterComponent {
   constructor(private scrollService: ScrollService) {}
 
   scrollToTop(): void {
-    this.scrollService.scrollToTop();
+    window.scrollTo(0, 0);;
   }
 }
