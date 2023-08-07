@@ -1,5 +1,5 @@
 import { Component, ElementRef, Renderer2 } from '@angular/core';
-import { ScrollService } from '../scroll.service';
+import { ScrollService } from '../services/scroll.service';
 
 @Component({
   selector: 'app-legal',

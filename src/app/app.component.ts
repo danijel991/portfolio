@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 import AOS from "aos";
-import { ScrollService } from './scroll.service';
+import { ScrollService } from './services/scroll.service';
 
 @Component({
   selector: 'app-root',

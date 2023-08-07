@@ -104,6 +104,7 @@
         transition: all 125ms ease-in-out;
         transform: scale(1.1);
       }
+
       &:disabled {
         opacity: 0.4;
         background: #00bee8;
@@ -189,6 +190,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
+
 input[data-autocompleted] {
   background-color: #141d2f !important;
 }
@@ -238,6 +240,15 @@ input:active {
   &:hover {
     transform: translatey(-5px);
     cursor: pointer;
+  }
+}
+
+.successSent {
+  position: relative;
+  top: 24px;
+
+  span {
+    color: #42A948 !important;
   }
 }
 
@@ -393,6 +404,7 @@ input:active {
     top: 351rem;
   }
 }
+
 @media only screen and (max-width: 420px) {
   .blurred-image-5 {
     width: 55vw;
@@ -400,6 +412,7 @@ input:active {
     top: 355rem;
   }
 }
+
 @media only screen and (max-width: 380px) {
   .blurred-image-5 {
     width: 88vw;
